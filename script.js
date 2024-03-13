@@ -66,6 +66,6 @@ window.onload = function () {
     setTimeout(function () {
       socket.remove(); // Remove the socket element after the transition completes
       document.querySelector("main").classList.remove("gone");
-    }, 1000); // Wait for 1 second, which is the same duration as the CSS transition
-  }, 3000);
+    }, 100); // Wait for 1 second, which is the same duration as the CSS transition
+  }, 100);
 };
