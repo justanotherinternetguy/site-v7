@@ -120,14 +120,14 @@ body {
 
 h1 {
   font-family: m;
-  font-size: 3.75rem;
+  font-size: 3rem;
   color: var(--foam);
   text-align: center;
 }
 
 h2 {
   font-family: m;
-  font-size: 3rem;
+  font-size: 2.25rem;
   color: var(--iris);
   text-align: center;
 }
@@ -333,4 +333,12 @@ button:hover .star-6 {
 }
 a {
   text-decoration: none;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Ensure canvas is behind other content */
 }
