@@ -6,7 +6,7 @@ const carouselText = [
 
 document.addEventListener("DOMContentLoaded", async function () {
   typeSentence(
-    "welcome to justanotherinternetguy's corner of the wwww",
+    "welcome to justanotherinternetguy's corner of the www",
     "#sentence"
   );
   //   carousel(carouselText, "#feature-text");
@@ -66,8 +66,8 @@ window.onload = function () {
     setTimeout(function () {
       socket.remove(); // Remove the socket element after the transition completes
       document.querySelector("main").classList.remove("gone");
-    }, 1000); // Wait for 1 second, which is the same duration as the CSS transition
-  }, 1000);
+    }, 100); // Wait for 1 second, which is the same duration as the CSS transition
+  }, 100);
 };
 
 var w = window.innerWidth,
@@ -79,7 +79,7 @@ var w = window.innerWidth,
   time,
   count,
   size = 7,
-  speed = 20,
+  speed = 4,
   parts = new Array(),
   colors = ["#eb6f92", "#f6c177", "#ebbcba", "#9ccfd8", "#c4a7e7"];
 var mouse = { x: 0, y: 0 };
@@ -110,6 +110,7 @@ function particles() {
     var li = parts[i];
     var distanceFactor = DistanceBetween(mouse, parts[i]);
     var distanceFactor = Math.max(Math.min(15 - distanceFactor / 10, 10), 1);
+    var distanceFactor = 1.5;
     ctx.beginPath();
     ctx.arc(li.x, li.y, li.size * distanceFactor, 0, Math.PI * 2, false);
     ctx.fillStyle = li.c;
