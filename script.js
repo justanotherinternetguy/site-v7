@@ -78,8 +78,8 @@ var w = window.innerWidth,
   arc = 100,
   time,
   count,
-  size = 7,
-  speed = 4,
+  size = 8,
+  speed = 5,
   parts = new Array(),
   colors = ["#eb6f92", "#f6c177", "#ebbcba", "#9ccfd8", "#c4a7e7"];
 var mouse = { x: 0, y: 0 };
