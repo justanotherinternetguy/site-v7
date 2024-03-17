@@ -60,6 +60,9 @@ class Particle {
     this.vx += this.accX;
     this.vy += this.accY;
 
+    this.vx += (Math.random() - 0.5) * 0.1;
+    this.vy += (Math.random() - 0.5) * 0.1;
+
     this.x += this.vx;
     this.y += this.vy;
 
