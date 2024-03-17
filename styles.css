@@ -116,6 +116,7 @@ textarea:not([rows]) {
 
 body {
   background-color: var(--base);
+  margin: 0;
 }
 
 h1 {
@@ -330,21 +331,20 @@ button:hover .star-6 {
 
 .btns {
   text-align: center;
-  margin-top: 3em;
+  margin-top: 2rem;
 }
 a {
   text-decoration: none;
 }
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -99; /* Ensure canvas is behind other content */
+
+.canvdiv {
+  display: grid;
+  place-items: center;
+  height: 9vh; /* Adjust as needed */
 }
 
-.content {
-  margin-top: 5rem;
-  z-index: 4;
+#scene {
+  width: 98vw;
+  height: 28vh;
+  margin: auto;
 }
