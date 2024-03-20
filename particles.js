@@ -18,16 +18,16 @@ class Particle {
       y: y,
     };
     this.r = Math.random() * (canvasWidth / 300) + 1;
-    this.vx = (Math.random() - 0.5) * 20;
-    this.vy = (Math.random() - 0.5) * 20;
+    this.vx = (Math.random() - 0.5) * 10;
+    this.vy = (Math.random() - 0.5) * 10;
     this.accX = 0;
     this.accY = 0;
     this.friction = Math.random() * 0.05 + 0.91;
 
     this.color = colors[Math.floor(Math.random() * colors.length)];
 
-    this.Kp = 0.006;
-    this.Ki = 0.00001;
+    this.Kp = 0.001;
+    this.Ki = 0;
     this.Kd = 0.05;
     this.prevErrorX = 0;
     this.prevErrorY = 0;
@@ -60,8 +60,8 @@ class Particle {
     this.vx += this.accX;
     this.vy += this.accY;
 
-    this.vx += (Math.random() - 0.5) * 0.1;
-    this.vy += (Math.random() - 0.5) * 0.1;
+    this.vx += (Math.random() - 0.5) * 0.06;
+    this.vy += (Math.random() - 0.5) * 0.06;
 
     this.x += this.vx;
     this.y += this.vy;
