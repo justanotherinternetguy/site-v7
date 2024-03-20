@@ -26,9 +26,9 @@ class Particle {
 
     this.color = colors[Math.floor(Math.random() * colors.length)];
 
-    this.Kp = 0.001;
+    this.Kp = 0.0015;
     this.Ki = 0;
-    this.Kd = 0.05;
+    this.Kd = 0.055;
     this.prevErrorX = 0;
     this.prevErrorY = 0;
     this.integralX = 0;
@@ -60,8 +60,8 @@ class Particle {
     this.vx += this.accX;
     this.vy += this.accY;
 
-    this.vx += (Math.random() - 0.5) * 0.06;
-    this.vy += (Math.random() - 0.5) * 0.06;
+    this.vx += (Math.random() - 0.5) * 0.03;
+    this.vy += (Math.random() - 0.5) * 0.03;
 
     this.x += this.vx;
     this.y += this.vy;

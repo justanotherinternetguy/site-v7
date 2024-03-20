@@ -103,6 +103,21 @@ textarea:not([rows]) {
   src: url("./fonts/Red_Hat_Mono/RedHatMono-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "i";
+  src: url("./fonts/Iosevka/Iosevka-Light.ttc");
+}
+
+@font-face {
+  font-family: "s";
+  src: url("./fonts/Slab/IosevkaSlab-Light.ttc");
+}
+
+@font-face {
+  font-family: "a";
+  src: url("./fonts/Aile/IosevkaAile-Light.ttc");
+}
+
 :root {
   --base: #232136;
   --text: #e0def4;
@@ -120,9 +135,11 @@ body {
 }
 
 h1 {
-  font-family: m;
+  font-family: d;
   font-size: 3rem;
   color: var(--foam);
+  font-weight: 500;
+  letter-spacing: 2px;
   z-index: 4;
   text-align: center;
 }
