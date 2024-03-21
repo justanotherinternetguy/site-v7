@@ -101,6 +101,7 @@ textarea:not([rows]) {
 @font-face {
   font-family: "m";
   src: url("./fonts/Red_Hat_Mono/RedHatMono-VariableFont_wght.ttf");
+  font-weight: 300;
 }
 
 @font-face {
@@ -368,4 +369,69 @@ a {
 
 .content {
   margin-top: 4rem;
+}
+
+.card {
+  width: 20rem;
+  height: 20rem;
+  background: var(--muted);
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-family: m;
+  font-weight: 900;
+  margin: 0 auto;
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  background: var(--foam);
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: m;
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  font-family: m;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 80%;
+  margin: auto;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.15rem;
+  transform: rotate(0deg);
+}
+
+.cards {
+  margin-bottom: 9rem;
+  margin-top: 3rem;
 }

@@ -83,7 +83,7 @@ function initScene() {
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  ctx.font = "bold " + canvasWidth / 14 + "px monospace";
+  ctx.font = "bold " + canvasWidth / 18 + "px monospace";
   ctx.textAlign = "center";
   ctx.fillText(textToRender, canvasWidth / 2, canvasHeight / 2);
 
